@@ -15,7 +15,8 @@ use App\Http\Controllers\ComicController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $comics = config('comics');
+    return view('welcome', compact('comics'));
 });
 
 Route::get('/comics',[ComicController::class, 'index'])->name('comics.index');

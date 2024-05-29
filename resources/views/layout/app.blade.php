@@ -16,7 +16,7 @@
 </head>
 <body>
     <header>
-
+@include('partials.header')
     </header>
 
     
@@ -24,7 +24,7 @@
  @yield('content')
 
    <footer>
-    
+@include('partials.footer')
    </footer>
        
 </body>
