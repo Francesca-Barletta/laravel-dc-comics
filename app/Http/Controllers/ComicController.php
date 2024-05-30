@@ -28,4 +28,16 @@ class ComicController extends Controller
         $new_comic = Comic::create($form_data);
         return to_route('comics.show', $new_comic);
     }
+
+    public function edit(Comic $comic){
+        return view('comics.edit', compact('comic'));
+    }
+
+    public function update(Request $request, Comic $comic){
+
+        $form_data = $request->all();
+        $comic->fill($form_data);
+        $comic->save();
+        return to_route('comics.show', $comic);
+    }
 }
