@@ -22,6 +22,10 @@ class ComicController extends Controller
     }
 
     public function store(){
+
+        $form_data = $request->all();
+
+        $new_comic = Comic::create($form_data);
         dump('metodo store');
     }
 }
