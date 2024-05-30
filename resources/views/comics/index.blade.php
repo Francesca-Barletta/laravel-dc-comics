@@ -3,7 +3,8 @@
 @section('title','comics')
     
 @section('content')  
-<main class="bg-dark">
+<div id="app">
+  <main class="bg-dark">
     <div class="container">
          <h1 class="text-white">Comics</h1>
     </div>
@@ -58,5 +59,6 @@
 </main>
 
 
+</div>
 
 @endsection
