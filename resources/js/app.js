@@ -12,12 +12,13 @@ createApp({
   data() {
     return {
    currentComic: 0,
+   comics: [],
     }
   },
   methods: {
-    delete(){
-        
-    }
+    removeComic() {
+        alert('vuoi davvero cancellare questo elemento?')
+    },
   },
   created() {
    

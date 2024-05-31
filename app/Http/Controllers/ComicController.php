@@ -27,6 +27,7 @@ class ComicController extends Controller
 
         $new_comic = Comic::create($form_data);
         return to_route('comics.show', $new_comic);
+        //ricorda la fillable nel model
     }
 
     public function edit(Comic $comic){
